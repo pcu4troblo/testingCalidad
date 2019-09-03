@@ -1,0 +1,14 @@
+
+<div class="main">
+  <form  [formGroup]="form" class="form1">
+  
+    <input class="un" type="email"
+          formControlName="email"  placeholder="Ingrese su usuario">
+ 
+    <input type="password" class="pass"
+        formControlName="pass"  placeholder="Ingrese su password">
+    <a  (click)="login()" class="submit" align="center">Iniciar sesión</a>
+    <span *ngIf="mensaje"> Introduzca credenciales</span>
+ </form>
+  
+</div>
